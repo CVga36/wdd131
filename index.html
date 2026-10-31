@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Caesare Iván González Vega</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Caesare Iván González Vega: a personal course home page featuring an introduction, Baja California, and useful web development resources.">
+    <meta name="author" content="Caesare Iván González Vega">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav aria-label="Main navigation">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&amp;id=p7#p7" target="_blank" rel="noopener noreferrer">Scripture</a>
+            <a href="#" aria-label="Final Project, coming soon">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Caesare Iván González Vega</h1>
+
+        <section class="card" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <div class="card-content about-content">
+                <!-- Replace profile.svg with your own optimized local profile photo before submitting. -->
+                <img class="profile-photo" src="images/profile.png" alt="Placeholder illustration for a personal profile photo" width="240" height="300">
+                <p>Welcome to my WDD 131 course website! I am studying software development and learning to build websites that are accessible, responsive, and useful. I enjoy exploring new programming concepts and applying them to real projects.</p>
+                <p>This page is where I will practice HTML, CSS, and JavaScript throughout the course.</p>
+
+                <h3>Baja California, Mexico</h3>
+                <figure class="place-figure">
+                    <img src="images/baja-california.jpg" alt="Illustration of a desert landscape with mountains and a cactus in Baja California" width="360" height="220">
+                    <figcaption>Landscape of Baja California</figcaption>
+                </figure>
+                <p>Baja California is located in northwestern Mexico. It is known for its desert landscapes, mountains, coastline, and the city of Mexicali.</p>
+            </div>
+        </section>
+
+        <section class="card" aria-labelledby="resources-heading">
+            <h2 id="resources-heading">Web Dev Resources</h2>
+            <div class="card-content resources-content">
+                <ul>
+                    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+                    <li><a href="https://web.dev/" target="_blank" rel="noopener noreferrer">web.dev</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
+                    <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C HTML Validator</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> · Caesare Iván González Vega · Baja California, Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

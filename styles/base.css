@@ -1,0 +1,204 @@
+:root {
+    --primary: #19486b;
+    --nav: #243746;
+    --background: #f3f6f9;
+    --surface: #ffffff;
+    --text: #1e2935;
+    --border: #cbd6de;
+    --accent: #f7d679;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary);
+    color: #fff;
+}
+
+#course-title {
+    display: block;
+    padding: 1.1rem 1rem;
+    text-align: center;
+    font-size: clamp(1.15rem, 2.6vw, 1.65rem);
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--nav);
+}
+
+nav a {
+    flex: 1 1 160px;
+    padding: 0.8rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: var(--accent);
+    color: #172737;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    gap: 1.2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.2rem 1rem 2rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    margin: 0.25rem 0 0.3rem;
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+.card {
+    min-width: 0;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.65rem;
+    box-shadow: 0 4px 16px rgb(22 47 68 / 8%);
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0.6rem 1rem;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card p {
+    margin: 0 0 0.8rem;
+}
+
+.about-content::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.profile-photo {
+    float: right;
+    width: min(34%, 170px);
+    height: auto;
+    margin: 0 0 0.7rem 1rem;
+    border-radius: 0.45rem;
+    background: #d8e6f0;
+}
+
+.about-content h3 {
+    clear: both;
+    margin: 1rem 0 0.8rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.place-figure {
+    float: left;
+    width: min(43%, 200px);
+    margin: 0 1rem 0.5rem 0;
+}
+
+.place-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: 0.3rem;
+}
+
+.place-figure figcaption {
+    padding-top: 0.25rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.resources-content {
+    display: flex;
+    align-items: center;
+    min-height: 255px;
+}
+
+.resources-content ul {
+    margin: 0;
+    padding-left: 1.8rem;
+}
+
+.resources-content li {
+    margin-bottom: 0.65rem;
+}
+
+.resources-content a {
+    color: #12558a;
+    text-underline-offset: 3px;
+}
+
+.resources-content a:hover,
+.resources-content a:focus-visible {
+    color: #823d00;
+}
+
+footer {
+    padding: 1rem;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.15rem 0;
+}
+
+#lastModified {
+    color: var(--accent);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 750px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-content {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-photo {
+        width: 40%;
+    }
+
+    .place-figure {
+        width: 45%;
+    }
+}
