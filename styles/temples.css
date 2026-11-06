@@ -1,0 +1,157 @@
+/* WDD 131 - Week 02 */
+/* Temple Album - Mobile Design */
+
+:root {
+    --primary-color: #19486b;
+    --secondary-color: #243746;
+    --background-color: #f4f6f8;
+    --text-color: #222;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* General */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+
+nav {
+    grid-column: 1 / -1;
+    display: none;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    margin-top: 0.5rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #dbeafe;
+    color: #111;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Mobile Menu Button */
+
+#menu {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 0.25rem 0.5rem;
+}
+
+#menu:hover,
+#menu:focus-visible {
+    color: #f7d679;
+}
+
+/* Main Content */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Temple Gallery */
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Temple Cards */
+
+figure {
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Temple Images */
+
+figure img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+/* Temple Names */
+
+figcaption {
+    margin-top: 0.75rem;
+    font-weight: 500;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    color: #f7d679;
+    font-size: 0.9rem;
+}

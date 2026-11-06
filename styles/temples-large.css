@@ -1,0 +1,79 @@
+/* WDD 131 - Week 02 */
+/* Temple Album - Large Screen Design */
+
+@media screen and (min-width: 48rem) {
+
+    /* Header */
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    header h2 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    /* Hide Mobile Menu Button */
+
+    #menu {
+        display: none;
+    }
+
+    /* Desktop Navigation */
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: transparent;
+    }
+
+    nav a {
+        padding: 0.75rem 1rem;
+        border-radius: 4px;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+        background-color: #dbeafe;
+        color: #111;
+    }
+
+    /* Main Content */
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    /* Temple Gallery - Three Columns */
+
+    .album {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    /* Temple Cards */
+
+    figure {
+        margin: 0;
+    }
+
+    /* Temple Names */
+
+    figcaption {
+        text-align: center;
+    }
+}

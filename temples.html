@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album | WDD 131 | Caesare Iván González Vega</title>
+
+    <meta name="description"
+        content="WDD 131 Temple Album by Caesare Iván González Vega. A responsive photo gallery of temples around the world.">
+
+    <meta name="author" content="Caesare Iván González Vega">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h2>Temple Album</h2>
+
+        <button id="menu"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="navigation"
+                aria-expanded="false">☰</button>
+
+        <nav id="navigation" aria-label="Main navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="album">
+
+            <!-- Salt Lake Temple -->
+            <figure>
+                <img src="images/salt-lake.webp"
+                    alt="Salt Lake Temple in Utah"
+                    width="400"
+                    height="250">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <!-- Mexico City Temple -->
+            <figure>
+                <img src="images/mexico-city.webp"
+                    alt="Mexico City Mexico Temple"
+                    width="400"
+                    height="250">
+                <figcaption>Mexico City Mexico Temple</figcaption>
+            </figure>
+
+            <!-- Rome Italy Temple -->
+            <figure>
+                <img src="images/rome.webp"
+                    alt="Rome Italy Temple"
+                    width="400"
+                    height="250">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <!-- San Diego California Temple -->
+            <figure>
+                <img src="images/san-diego.webp"
+                    alt="San Diego California Temple"
+                    width="400"
+                    height="250"
+                    loading="lazy">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+
+            <!-- Paris France Temple -->
+            <figure>
+                <img src="images/paris.webp"
+                    alt="Paris France Temple"
+                    width="400"
+                    height="250"
+                    loading="lazy">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+
+            <!-- Tokyo Japan Temple -->
+            <figure>
+                <img src="images/tokyo.webp"
+                    alt="Tokyo Japan Temple"
+                    width="400"
+                    height="250"
+                    loading="lazy">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+
+            <!-- Washington D.C. Temple -->
+            <figure>
+                <img src="images/washington.webp"
+                    alt="Washington D.C. Temple"
+                    width="400"
+                    height="250"
+                    loading="lazy">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+
+            <!-- Guadalajara Mexico Temple -->
+            <figure>
+                <img src="images/guadalajara.webp"
+                    alt="Guadalajara Mexico Temple"
+                    width="400"
+                    height="250"
+                    loading="lazy">
+                <figcaption>Guadalajara Mexico Temple</figcaption>
+            </figure>
+
+            <!-- Monterrey Mexico Temple -->
+            <figure>
+                <img src="images/monterrey.webp"
+                    alt="Monterrey Mexico Temple"
+                    width="400"
+                    height="250"
+                    loading="lazy">
+                <figcaption>Monterrey Mexico Temple</figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | Caesare Iván González Vega
+            | Baja California, Mexico
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
