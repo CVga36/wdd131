@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mexicali, Mexico | WDD 131 | Caesare Iván González Vega</title>
+
+    <meta name="description"
+        content="Explore Mexicali, Baja California, Mexico. Learn about the city's location, culture, and weather. Created by Caesare Iván González Vega for WDD 131.">
+
+    <meta name="author" content="Caesare Iván González Vega">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mexicali, Mexico</h1>
+    </header>
+
+    <main>
+
+        <!-- Responsive Hero Image -->
+        <div class="hero">
+
+            <picture>
+                <source
+                    srcset="images/mexicali-wide.webp"
+                    media="(min-width: 768px)">
+
+                <img
+                    src="images/mexicali-small.webp"
+                    alt="Panoramic view of Mexicali, Baja California, Mexico"
+                    width="400"
+                    height="600">
+            </picture>
+
+        </div>
+
+        <!-- City Information -->
+        <section class="data">
+
+            <h2>Data</h2>
+
+            <dl>
+                <dt>Country:</dt>
+                <dd>Mexico</dd>
+
+                <dt>State:</dt>
+                <dd>Baja California</dd>
+
+                <dt>Region:</dt>
+                <dd>Northwestern Mexico</dd>
+
+                <dt>Language:</dt>
+                <dd>Spanish</dd>
+
+                <dt>Currency:</dt>
+                <dd>Mexican Peso (MXN)</dd>
+
+                <dt>Time Zone:</dt>
+                <dd>Pacific Time</dd>
+
+                <dt>Founded:</dt>
+                <dd>1903</dd>
+            </dl>
+
+        </section>
+
+        <!-- Weather Information -->
+        <section class="weather">
+
+            <h2>Weather</h2>
+
+            <img
+                class="weather-icon"
+                src="images/weather.svg"
+                alt="Partly cloudy weather"
+                width="80"
+                height="80">
+
+            <dl>
+                <dt>Temperature:</dt>
+                <dd>8°C</dd>
+
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
+
+                <dt>Wind:</dt>
+                <dd>10 km/h</dd>
+
+                <dt>Wind Chill:</dt>
+                <dd><span id="windchill"></span></dd>
+            </dl>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            | Caesare Iván González Vega
+            | Baja California, Mexico
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
