@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website planning document for Night Sky Notebook, an educational astronomy website for beginners. Includes site purpose, scenarios, color scheme, typography, and wireframes.">
+    <meta name="author" content="Caesare Iván González Vega">
+    <title>Night Sky Notebook | WDD 131 Website Site Plan</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="Night Sky Notebook star logo" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="29" fill="#eaf3ff" />
+                    <path d="M32 9L37 25L53 30L37 35L32 52L27 35L11 30L27 25Z" fill="#14213d"/>
+                    <circle cx="48" cy="13" r="3" fill="#b87917" />
+                </svg>
+                <div><p class="brand-name">Night Sky Notebook</p><p class="brand-tagline">A beginner's guide to the stars</p></div>
+            </div>
+            <nav aria-label="Site plan sections">
+                <a href="#purpose">Purpose</a>
+                <a href="#scenarios">Scenarios</a>
+                <a href="#design">Design</a>
+                <a href="#wireframes">Wireframes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="page-content">
+        <div class="intro">
+            <p class="eyebrow">BYU–Idaho • WDD 131 • Week 05</p>
+            <h1>Website Planning Document</h1>
+            <p class="lead">A design blueprint for an educational website that helps beginners recognize constellations, plan a night of stargazing, and keep an observation journal.</p>
+        </div>
+
+        <section class="section-card" id="site-name" aria-labelledby="site-name-title">
+            <div class="section-number">01 / Site identity</div>
+            <h2 id="site-name-title">Site Name</h2>
+            <p class="display-name">Night Sky Notebook</p>
+            <p>I chose this name because it describes both parts of the website: learning about objects in the night sky and keeping personal notes about what visitors observe. It is friendly, memorable, and appropriate for beginners.</p>
+            <p>The logo combines a star and a small accent star to represent curiosity and sky observation. A commercial domain name is not required for this course project.</p>
+        </section>
+
+        <section class="section-card" id="purpose" aria-labelledby="purpose-title">
+            <div class="section-number">02 / Audience and content</div>
+            <h2 id="purpose-title">Site Purpose</h2>
+            <p>Night Sky Notebook is an informational website for students, families, and people who want to learn basic astronomy without expensive equipment. It will explain what to look for in the night sky, introduce well-known constellations, and share practical tips for a first stargazing experience.</p>
+            <p>The project is planned as three connected pages:</p>
+            <ol class="page-plan">
+                <li><strong>Home:</strong> Introduction to skywatching, beginner-friendly tips, and featured constellations.</li>
+                <li><strong>Constellation Guide:</strong> Cards containing constellation names, observing seasons, short descriptions, and images; visitors can filter the cards using JavaScript.</li>
+                <li><strong>Observation Journal:</strong> A simple HTML form where visitors record the date, location description, and what they observed. JavaScript will save entries using <code>localStorage</code>.</li>
+            </ol>
+            <p class="note"><strong>Planned interactivity:</strong> Filtering an array of constellation objects, dynamically updating cards, form validation, and saving observations in the browser. These features will be developed during Week 06.</p>
+        </section>
+
+        <section class="section-card" id="scenarios" aria-labelledby="scenarios-title">
+            <div class="section-number">03 / Visitor questions</div>
+            <h2 id="scenarios-title">Scenarios</h2>
+            <p>These questions represent what a typical visitor may want to know:</p>
+            <ul class="scenario-list">
+                <li><strong>Scenario 1:</strong> “I have never watched the stars before. What should I bring, and how can I get started?”</li>
+                <li><strong>Scenario 2:</strong> “Which constellations can I look for during different seasons of the year?”</li>
+                <li><strong>Scenario 3:</strong> “Can I record the constellations I found so I can remember them later?”</li>
+            </ul>
+            <p>The Home page will address the first scenario, the Constellation Guide will address the second, and the Observation Journal will address the third.</p>
+        </section>
+
+        <section class="section-card" id="design" aria-labelledby="design-title">
+            <div class="section-number">04 / Visual direction</div>
+            <h2 id="design-title">Color Schema</h2>
+            <p>The site will use a calm night-sky palette. These same colors are used throughout this planning document.</p>
+            <div class="colors">
+                <div class="color-item"><div class="swatch navy" aria-hidden="true"></div><div><h3>Midnight Navy <code>#14213D</code></h3><p>Header, footer, headings, and primary navigation.</p></div></div>
+                <div class="color-item"><div class="swatch pale" aria-hidden="true"></div><div><h3>Pale Sky <code>#EAF3FF</code></h3><p>Page background and light section accents.</p></div></div>
+                <div class="color-item"><div class="swatch gold" aria-hidden="true"></div><div><h3>Starlight Gold <code>#B87917</code></h3><p>Small decorative accents, indicators, and highlighted details.</p></div></div>
+            </div>
+
+            <h2 class="typography-title">Typography</h2>
+            <p>Two common font families are planned to keep the design readable and easy to maintain:</p>
+            <div class="type-samples">
+                <div><p class="type-label">Headings — Georgia, serif</p><p class="heading-sample">Discover the Night Sky</p><p>Used for main page titles and section headings.</p></div>
+                <div><p class="type-label">Body and navigation — Arial, sans-serif</p><p class="body-sample">A simple guide to discovering constellations.</p><p>Used for paragraphs, navigation, labels, buttons, and form fields.</p></div>
+            </div>
+        </section>
+
+        <section class="section-card" id="wireframes" aria-labelledby="wireframes-title">
+            <div class="section-number">05 / Layout planning</div>
+            <h2 id="wireframes-title">Home Page Wireframes</h2>
+            <p>These are simplified layouts for the <strong>home page</strong>. They show the intended relationship between content blocks rather than the final photography or styling.</p>
+            <div class="wireframe-layout">
+                <div class="wireframe-panel">
+                    <h3>Mobile view</h3>
+                    <p class="caption">Single-column layout with a collapsible navigation menu.</p>
+                    <div class="wireframe mobile" aria-label="Mobile wireframe: logo and menu; hero title; intro and call to action; featured constellation; three observing tips; journal call to action; footer">
+                        <div class="wf-row"><span>Logo / Site Name</span><span>☰</span></div>
+                        <div class="wf-box wf-hero"><strong>Hero Heading</strong><span>Welcome message</span><span class="wf-button">Explore the Guide</span></div>
+                        <div class="wf-box wf-photo">Hero Image</div>
+                        <div class="wf-box">Featured Constellation</div>
+                        <div class="wf-box">Beginner Tip 1</div>
+                        <div class="wf-box">Beginner Tip 2</div>
+                        <div class="wf-box">Beginner Tip 3</div>
+                        <div class="wf-box wf-callout">Start Observation Journal</div>
+                        <div class="wf-footer">Footer / References</div>
+                    </div>
+                </div>
+                <div class="wireframe-panel">
+                    <h3>Desktop view</h3>
+                    <p class="caption">Wide navigation, side-by-side hero, and a three-card content grid.</p>
+                    <div class="wireframe desktop" aria-label="Desktop wireframe: full navigation; two-column hero area with heading and image; featured constellation; three observing tips across one row; journal call to action; footer">
+                        <div class="wf-row"><span>Logo / Site Name</span><span>Home &nbsp; Guide &nbsp; Journal</span></div>
+                        <div class="desktop-hero"><div class="wf-box wf-hero"><strong>Hero Heading</strong><span>Welcome message and introduction</span><span class="wf-button">Explore the Guide</span></div><div class="wf-box wf-photo">Hero Image</div></div>
+                        <div class="wf-box">Featured Constellation / Quick Facts</div>
+                        <div class="desktop-cards"><div class="wf-box">Beginner Tip 1</div><div class="wf-box">Beginner Tip 2</div><div class="wf-box">Beginner Tip 3</div></div>
+                        <div class="wf-box wf-callout">Start Observation Journal / Call to Action</div>
+                        <div class="wf-footer">Footer / References</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>WDD 131 • Week 05 Site Plan • Caesare Iván González Vega</p>
+        <p>Night Sky Notebook — planning document for an original course project.</p>
+    </footer>
+</body>
+</html>
